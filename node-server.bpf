@@ -206,10 +206,10 @@
     </presentationIdentifiers>
     <beacons>
     </beacons>
-    <additionalFileToPublish>\\vmware-host\Shared Folders\Downloads\Customers\fwi\nodejs-starter-kit\dist\node-server.zip</additionalFileToPublish>
-    <additionalFileToPublish>\\vmware-host\Shared Folders\Downloads\Customers\fwi\nodejs-starter-kit\dist\www.zip</additionalFileToPublish>
+    <additionalFileToPublish>Z:\git\bs\github\node.js-starter-project\dist\node-server.zip</additionalFileToPublish>
+    <additionalFileToPublish>Z:\git\bs\github\node.js-starter-project\www.zip</additionalFileToPublish>
     <DirectoryLocations>
-      <AllFiles>\\vmware-host\Shared Folders\Downloads\Customers\fwi\nodejs-starter-kit\dist</AllFiles>
+      <AllFiles>Z:\git\bs\github\node.js-starter-project</AllFiles>
       <Image>\\vmware-host\Shared Folders\Documents\BA Presentations\nodejs-all-hands-tips-n-tricks</Image>
       <Video>\\vmware-host\Shared Folders\Documents\BA Presentations\nodejs-all-hands-tips-n-tricks</Video>
       <Audio>\\vmware-host\Shared Folders\Documents\BA Presentations\nodejs-all-hands-tips-n-tricks</Audio>
