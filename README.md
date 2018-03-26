@@ -90,6 +90,6 @@ Then add dist/node-server.zip and www.zip to Presentation Properties > Files in 
  
 A sample webpack config is included.  
 
-####Notes
+#### Notes
 * To use [BrightSign Javascript objects](http://docs.brightsign.biz/display/DOC/JavaScript+API): An example is included. See the "externals" section of the config.
 * See the [Node.js documentation](http://docs.brightsign.biz/display/DOC/Node.js) for more information.
