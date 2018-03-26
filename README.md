@@ -1,12 +1,12 @@
-#BrightSign Node.js Sample
+# BrightSign Node.js Sample
 
 This sample BrightAuthor application shows how to instantiate a node.js server that runs on a BrightSign player.
 
-##About the sample application
+## About the sample application
 This application creates a web server that can be used to serve static files from a folder called "www", on port 9090. There is one file included in this directory, readme.md. If you run the application on a BrightSign player that is connected to a network, type this into a browser to test it: http://<ip address of brightsign>:9090/www/readme.md.
 
-##Deploying a Node.js server application with BrightAuthor 	
-###Create your Node.js application
+## Deploying a Node.js server application with BrightAuthor 	
+### Create your Node.js application
 * Run npm init to create the skeleton
 * Run npm install to import modules
 * Create an html file as the entry point
@@ -14,20 +14,20 @@ This application creates a web server that can be used to serve static files fro
 * Run webpack to package your application (see below)
 * Package your Node.js application as a zip
 
-###Create your BrightAuthor application
+### Create your BrightAuthor application
 * Create a plugin to launch your Node.js application
 * Add the plugin to BrightAuthor
 * Include your application zip as an additional file 
 * Add code to your plugin to unzip the application
 
-###Additional steps for the application
+### Additional steps for the application
 This application uses static files in the www folder. 
 
 * Add your files to this folder, and zip them up. 
 * The zip must have all the files at the root when unzipped (no folder hierarchy), and must be called www.zip. 
 * The webpack process will copy the zip to the dist folder.
 
-####Webpack
+#### Webpack
 The size of the node_modules directory can be a problem when deploying your application to an SD card or publishing to the cloud. This directory contains all the code your application depends on, but it also contains a lot of extra files that are unnecessary.  Fortunately, there is a pretty easy solution: webpack.
  
 Say you have a node.js application that has an index.html that calls an entry point function called main():
