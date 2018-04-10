@@ -8,20 +8,20 @@ This application creates a web server that can be used to serve static files fro
 ## Deploying a Node.js server application with BrightAuthor 	
 ### Create your Node.js application
 * Run npm init to create the skeleton
-* Run npm install to import modules
-* Create an html file as the entry point
-* Import your node modules and write your javascript code
+* Run npm install to import modules (this example imports express)
+* Create an html file as the entry point (in this example, node-server.html)
+* Import your node modules and write your javascript code (in this example, the javascript is in index.js)
 * Run webpack to package your application (see below)
-* Package your Node.js application as a zip
+* Package your Node.js application as a zip (this is done automatically by the included webpack configuration)
 
 ### Create your BrightAuthor application
-* Create a plugin to launch your Node.js application
+* Create a plugin to launch your Node.js application (in this example, node-server.brs)
 * Add the plugin to BrightAuthor
-* Include your application zip as an additional file 
-* Add code to your plugin to unzip the application
+* Include your application zip as an additional file (the file is node-server.zip in the dist folder)
+* Add code to your plugin to unzip the application (see node-server.brs)
 
 ### Additional steps for the application
-This application uses static files in the www folder. 
+This application uses static files in the www folder. Your application might be completely different; this is just an example.
 
 * Add your files to this folder, and zip them up. 
 * The zip must have all the files at the root when unzipped (no folder hierarchy), and must be called www.zip. 
@@ -93,3 +93,4 @@ A sample webpack config is included.
 #### Notes
 * To use [BrightSign Javascript objects](http://docs.brightsign.biz/display/DOC/JavaScript+API): An example is included. See the "externals" section of the config.
 * See the [Node.js documentation](http://docs.brightsign.biz/display/DOC/Node.js) for more information.
+
