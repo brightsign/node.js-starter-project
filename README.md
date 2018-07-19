@@ -3,7 +3,7 @@
 This sample BrightAuthor application shows how to instantiate a node.js server that runs on a BrightSign player.
 
 ## About the sample application
-This application creates a web server that can be used to serve static files from a folder called "www", on port 9090. There is one file included in this directory, readme.md. If you run the application on a BrightSign player that is connected to a network, type this into a browser to test it: http://<ip address of brightsign>:9090/www/readme.md.
+This application creates a web server that can be used to serve static files from a folder called "www", on port 9090. There is one file included in this directory, readme.md. If you run the application on a BrightSign player that is connected to a network, type this into a browser to test it: http://-ip address of brightsign-:9090/readme.md.
 
 ## Deploying a Node.js server application with BrightAuthor 	
 ### Create your Node.js application
