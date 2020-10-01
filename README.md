@@ -1,6 +1,6 @@
 # BrightSign Node.js Sample
 
-This sample BrightAuthor:connected application shows how to instantiate a node.js server that runs on a BrightSign player. This application creates a web server that can serve static files from port 9090. 
+This sample BrightAuthor:connected application shows how to instantiate a node.js server that runs on a BrightSign player. It creates a web server that can serve static files from port 9090. 
 
 This example was created for BrightAuthor:connected.
 
