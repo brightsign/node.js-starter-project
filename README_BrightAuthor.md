@@ -3,7 +3,7 @@ This sample BrightAuthor application shows how to instantiate a node.js server t
 
 ## About the Sample Application  
 
-This application creates a web server that can serve static files from a folder called www on port 9090.  This example was created for BrightAuthor. 
+This application creates a web server that can serve static files from a folder called *www* on port 9090.  This example was created for BrightAuthor. 
 
  
 ## Prerequisites 
@@ -18,8 +18,8 @@ This application creates a web server that can serve static files from a folder 
 ### Create your Node.js Application  
 1. Clone the project or download [ZIP](http://www.github.com/brightsign/node.js-starter-project/archive/master.zip), and then unzip *node.js-starter-project-master.zip*. 
 2. If you have not run npm previously, run **npm init** in your terminal to initialize the install. If you wish, you can import other modules using **npm install** for additional functionality. 
-3. Create an html file or use the node-server.html file that is provided in the node.js-starter-project-master folder, as the application entry point.  
-4. Import the node modules you will need in your application to function and write your JavaScript code (in this example, the node modules are all included in express and the JavaScript is in index.js). From the *Downloads* folder, run:
+3. Create an html file or use the **node-server.html** file that is provided in the *node.js-starter-project-master* folder, as the application entry point.  
+4. Import the node modules you will need in your application to function and write your JavaScript code (in this example, the node modules are all included in **express** and the JavaScript is in **index.js**). From the *Downloads* folder, run:
 ``` 
 npm install --save express  
 ```
@@ -38,6 +38,7 @@ npx webpack --mode production 
 
 ### Display Files from your Webserver  
 In this example, we serve the *www* folder with static files, but you can change it to whatever index.html you want to display in a browser. The zip in this example has all files at the root when unzipped (there should be no folder hierarchy), and is called www.zip. The webpack process will create a *node-server.zip* file in the *dist* folder.  
+
 If you have used the unmodified example, enter the *http://<ip_address_of_ brightsign>:9090/www/readme.md* in a browser. It should then display the readme.md file.   
 
 ## Appendix
