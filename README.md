@@ -37,15 +37,15 @@ After running Webpack, follow the steps below to create your application. This e
 If you have a more complex node application, or don't have the latest version of BrightAuthor:connected, you may need to use an alternate method to create your application. See Appendix A for this method. 
 
 ### Display Files from your Webserver  
-If you have used the unmodified example, you can access the files in your root directory or in your directory folder using the link in a browser, for example: 
+If you have used the unmodified example, you can access the files in your root directory or in your directory folder using the link in a browser. For example: 
 
-*http://<ip_address_of_ BrightSign>:9090/<filename>*
+http://<ip_address_of_ BrightSign>:9090/filename
  
 ## Appendix
 ### Appendix A: An Alternate Method 
 If you have a more complex node application, or don't have the latest version of BrightAuthor:connected, you can use these steps to create your application: 
 
-1. Create an html file or use the node-server.html file that is provided in the node.js-starter-project-master folder, as the application entry point. 
+1. Create an html file or use the **node-server.html** file that is provided in the *node.js-starter-project-master* folder, as the application entry point. 
 2. In the **Presentation** dropdown menu, select **New Presentation** and enter a presentation name. 
 3. Expand **Presentation Settings** and select **Support Content**.  
 4. Under **Script Plugin**, add your plugin or use **node-server.brs** from the example, to enable Node.js in your presentation. 
