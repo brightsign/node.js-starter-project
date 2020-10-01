@@ -1,9 +1,8 @@
 # BrightSign Node.js Sample
 
-This sample BrightAuthor:connected application shows how to instantiate a node.js server that runs on a BrightSign player.
+This sample BrightAuthor:connected application shows how to instantiate a node.js server that runs on a BrightSign player. This application creates a web server that can serve static files from port 9090. 
 
-## About the Sample Application
-This application creates a node.js web server that can serve static files from port 9090.  This example was created for BrightAuthor:connected.
+This example was created for BrightAuthor:connected.
 
 ## Prerequisites
 * If you don’t have it already, download Nodejs to install Node.js and npm. 
@@ -13,7 +12,7 @@ This application creates a node.js web server that can serve static files from p
 ## Deploying a Node.js Aerver Application with BrightAuthor:connected	
 ### Create your Node.js Application
 1. Clone the project or download [ZIP](http://www.github.com/brightsign/node.js-starter-project/archive/master.zip), and then unzip *node.js-starter-project-master.zip*. 
-2. If you have not run npm previously, run **npm  init** in your terminal to initialize the install. If you wish, you can import other modules for additional functionality with **npm  install** . 
+2. If you have not run npm previously, run **npm init** in your terminal to initialize the install. If you wish, you can import other modules with **npm  install** for additional functionality. 
 3. Import the node modules you will need your application to function and write your JavaScript code (in this example, the node modules are all included in express and the JavaScript is in index.js). From the *Downloads* folder, run: 
 ``` 
 npm install --save express  
