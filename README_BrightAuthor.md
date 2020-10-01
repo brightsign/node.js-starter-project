@@ -1,4 +1,7 @@
-# About the Sample Application  
+# BrightSign Node.js Sample
+This sample BrightAuthor application shows how to instantiate a node.js server that runs on a BrightSign player.
+
+## About the Sample Application  
 
 This application creates a web server that can serve static files from a folder called www on port 9090.  This example was created for BrightAuthor. 
 
@@ -29,7 +32,9 @@ npx webpack --mode production 
 ### Create your Application in BrightAuthor 
 1. Create a plugin, or use **node-server.brs** from the example, to launch your Node.js application. 
 2. In the BrightAuthor **Presentation Properties** under **Autorun**, add the script plugin to enable Node.js in your presentation.  
+![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/PresentProperties1.png)
 3. Under **Files**, add the two zip files from your source directory – **dist/node-server.zip** and **www.zip**. 
+![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/PresentProperties2.png)
 
 ### Display Files from your Webserver  
 In this example, we serve the *www* folder with static files, but you can change it to whatever index.html you want to display in a browser. The zip in this example has all files at the root when unzipped (there should be no folder hierarchy), and is called www.zip. The webpack process will create a *node-server.zip* file in the *dist* folder.  
