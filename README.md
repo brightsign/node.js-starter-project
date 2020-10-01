@@ -31,7 +31,7 @@ After running Webpack, follow the steps below to create your application. This e
 2. Select **Single Zone > Node.js** as the presentation type. 
 3. Enter a presentation name and select the application folder icon under **Node.js**. 
 4. In the pop-up window, choose the bundle.js example under the dist folder or include your own JavaScript application. Then choose **Select**: 
-
+![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/CreateApplication_BAcon.png)
 5. In the main window, select **Start**.  
 6. Save and publish your presentation.  
 
