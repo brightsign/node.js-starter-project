@@ -1,96 +1,58 @@
 # BrightSign Node.js Sample
 
-This sample BrightAuthor application shows how to instantiate a node.js server that runs on a BrightSign player.
+This sample BrightAuthor:connected application shows how to instantiate a node.js server that runs on a BrightSign player. It creates a web server that can serve static files from port 9090. 
 
-## About the sample application
-This application creates a web server that can be used to serve static files from a folder called "www", on port 9090. There is one file included in this directory, readme.md. If you run the application on a BrightSign player that is connected to a network, type this into a browser to test it: http://-ip address of brightsign-:9090/readme.md.
+This example was created for BrightAuthor:connected.
 
-## Deploying a Node.js server application with BrightAuthor 	
-### Create your Node.js application
-* Run npm init to create the skeleton
-* Run npm install to import modules (this example imports express)
-* Create an html file as the entry point (in this example, node-server.html)
-* Import your node modules and write your javascript code (in this example, the javascript is in index.js)
-* Run webpack to package your application (see below)
-* Package your Node.js application as a zip (this is done automatically by the included webpack configuration)
+## Prerequisites
+* If you don’t have it already, download Nodejs to install Node.js and npm. 
+* Your computer and BrightSign player must be connected to the internet. 
+* BrightAuthor:connected should already be downloaded and installed on your computer. 
 
-### Create your BrightAuthor application
-* Create a plugin to launch your Node.js application (in this example, node-server.brs)
-* Add the plugin to BrightAuthor
-* Include your application zip as an additional file (the file is node-server.zip in the dist folder)
-* Add code to your plugin to unzip the application (see node-server.brs)
-
-### Additional steps for the application
-This application uses static files in the www folder. Your application might be completely different; this is just an example.
-
-* Add your files to this folder, and zip them up. 
-* The zip must have all the files at the root when unzipped (no folder hierarchy), and must be called www.zip. 
-* The webpack process will copy the zip to the dist folder.
-
-#### Webpack
-The size of the node_modules directory can be a problem when deploying your application to an SD card or publishing to the cloud. This directory contains all the code your application depends on, but it also contains a lot of extra files that are unnecessary.  Fortunately, there is a pretty easy solution: webpack.
- 
-Say you have a node.js application that has an index.html that calls an entry point function called main():
-
+## Deploying a Node.js Aerver Application with BrightAuthor:connected	
+### Create your Node.js Application
+1. Clone the project or download [ZIP](http://www.github.com/brightsign/node.js-starter-project/archive/master.zip), and then unzip *node.js-starter-project-master.zip*. 
+2. If you have not run npm previously, run **npm init** in your terminal to initialize the install. If you wish, you can import other modules with **npm  install** for additional functionality. 
+3. Import the node modules you will need your application to function and write your JavaScript code (in this example, the node modules are all included in express and the JavaScript is in index.js). From the *Downloads* folder, run: 
 ``` 
-<body onload='main()'>
+npm install --save express  
 ```
-If this function is inline in the html, you will want to move it to a new file, index.js. This file would contain the references to your other javascript files, and to the node modules:
- 
-```
-var myutils = require('./utilities'); // My utilities.js
-var moment = require('moment'); // A node module
- 
-function main() {
- 
-  myutils.foo();
-  moment.now();
-  ...
-}
-
-```
-Your index.html would then need to reference index.js:
-
+4. Run these Webpack commands to package your node application as a single JavaScript file (see Appendix B: Notes for more details):   
 ``` 
-<script src='./index.js'></script>
-```
- 
-To use webpack, attach main() to the window object so that it can be found from index.html (the actual definition gets uglified):
+npm install --save-dev webpack webpack-cli copy-webpack-plugin zip-webpack-plugin  
 
-``` 
-var myutils = require('./utilities'); // My utilities.js
-var moment = require('moment'); // A node module
- 
-function main() {
- 
-  myutils.foo();
-  moment.now();
-  ...
-}
-window.main = main;
+npx webpack --mode production    
 ```
- 
-Change index.html to point to the bundled javascript, and to window.main():
 
-``` 
-<script src='./bundle.js'></script>
- 
-<body onload="window.main()">
-```
- 
-To build your bundle:
+### Create your Application
+After running Webpack, follow the steps below to create your application. This example assumes that you have the latest version of BrightAuthor:connected: 
+1. In the **Presentation** dropdown menu, select **New Presentation**. 
+2. Select **Single Zone > Node.js** as the presentation type. 
+3. Enter a presentation name and select the application folder icon under **Node.js**. 
+4. In the pop-up window, choose the bundle.js example under the dist folder or include your own JavaScript application. Then choose **Select**: 
+![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/CreateApplication_BAcon.png)
+5. In the main window, select **Start**.  
+6. Save and publish your presentation.  
 
-```
-npm install --save express
-npm install --save-dev webpack webpack-cli copy-webpack-plugin zip-webpack-plugin
-npx webpack --mode production
-```
- 
-Then add dist/node-server.zip and www.zip to Presentation Properties > Files in BrightAuthor.
- 
-A sample webpack config is included.  
+If you have a more complex node application, or don't have the latest version of BrightAuthor:connected, you may need to use an alternate method to create your application. See Appendix A for this method. 
 
-#### Notes
-* To use [BrightSign Javascript objects](http://docs.brightsign.biz/display/DOC/JavaScript+API): An example is included. See the "externals" section of the config.
-* See the [Node.js documentation](http://docs.brightsign.biz/display/DOC/Node.js) for more information.
+### Display Files from your Webserver  
+If you have used the unmodified example, you can access the files in your root directory or in your directory folder using the link in a browser. For example: 
+
+http://<ip_address_of_ BrightSign>:9090/filename
+ 
+## Appendix
+### Appendix A: An Alternate Method 
+If you have a more complex node application, or don't have the latest version of BrightAuthor:connected, you can use these steps to create your application: 
+
+1. Create an html file or use the **node-server.html** file that is provided in the *node.js-starter-project-master* folder, as the application entry point. 
+2. In the **Presentation** dropdown menu, select **New Presentation** and enter a presentation name. 
+3. Expand **Presentation Settings** and select **Support Content**.  
+4. Under **Script Plugin**, add your plugin or use **node-server.brs** from the example, to enable Node.js in your presentation. 
+5. Use the “File Select” icon to add your application zip as an additional file (for example, **dist/node-server.zip**). 
+
+### Appendix B: Notes
+* The  node_modules directory contains a lot of unnecessary files in addition to the code your application needs, and its size can be a problem when you deploy your application to an SD card or publish it to the cloud. [Webpack](https://webpack.js.org), which bundles JavaScript modules to use in browsers, solves this problem. 
+* An example is included to help you use [BrightSign Javascript objects](http://docs.brightsign.biz/display/DOC/JavaScript+API). See the "externals" section of the webpack.config.js.
+* See the BrightSign [Node.js documentation](http://docs.brightsign.biz/display/DOC/Node.js) for more information.
 
