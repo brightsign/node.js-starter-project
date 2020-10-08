@@ -1,5 +1,5 @@
 # BrightSign Node.js Sample
-This sample BrightAuthor application shows how to instantiate a node.js server that runs on a BrightSign player. It creates a web server that can serve static files from a folder called *www* on port 9090.  
+This sample BrightAuthor application shows how to instantiate a node.js server that runs on a BrightSign player. It creates a web server that can serve static files from the root folder on port 9090.  
 
 This example was created for BrightAuthor. 
 
@@ -31,13 +31,11 @@ npx webpack --mode production 
 1. Create a plugin, or use **node-server.brs** from the example, to launch your Node.js application. 
 2. In the BrightAuthor **Presentation Properties** under **Autorun**, add the script plugin to enable Node.js in your presentation.  
 ![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/PresentProperties1.png)
-3. Under **Files**, add the two zip files from your source directory – **dist/node-server.zip** and **www.zip**. 
+3. Under **Files**, add the **dist/node-server.zip** file from your source directory. 
 ![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/PresentProperties2.png)
 
 ### Display Files from your Webserver  
-In this example, we serve the *www* folder with static files, but you can change it to whatever index.html you want to display in a browser. The zip in this example has all files at the root when unzipped (there should be no folder hierarchy), and is called www.zip. The webpack process will create a *node-server.zip* file in the *dist* folder.  
-
-If you have used the unmodified example, enter the *http://<ip_address_of_ brightsign>:9090/www/readme.md* in a browser. It should then display the readme.md file.   
+If you have used the unmodified example, enter the *http://<ip_address_of_ brightsign>:9090/filename* in a browser (replace filename and the ip address with your specific information). It should then display the readme.md file.   
 
 ## Appendix
 ### Appendix A: About Webpack 
