@@ -32,7 +32,6 @@ npx webpack --mode production 
 2. In the BrightAuthor **Presentation Properties** under **Autorun**, add the script plugin to enable Node.js in your presentation.  
 ![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/PresentProperties1.png)
 3. Under **Files**, add the **dist/node-server.zip** file from your source directory. 
-![](https://github.com/stmulq/node.js-starter-project/blob/Documentation_updates/PresentProperties2.png)
 
 ### Display Files from your Webserver  
 If you have used the unmodified example, enter the *http://<ip_address_of_ brightsign>:9090/filename* in a browser (replace filename and the ip address with your specific information). It should then display the readme.md file.   
