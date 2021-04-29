@@ -22,10 +22,12 @@ module.exports = {
     rules: [{}]
   },
   plugins: [
-    new CopyWebpackPlugin([{
-      from: './*.html',
-      to: '.'
-    }]),
+    new CopyWebpackPlugin({
+      patterns: [{
+        from: './*.html',
+        to: '.'
+      }]
+    }),
     new ZipPlugin({
       filename: 'node-server.zip'
     })
