@@ -19,9 +19,8 @@ npm install --save express 
 ```
 4. Run these Webpack commands to package your node application as a single JavaScript file (see Appendix B: Notes for more details):   
 ``` 
-npm install --save-dev webpack webpack-cli copy-webpack-plugin zip-webpack-plugin  
-
-npx webpack --mode production    
+npm install --save-dev webpack webpack-cli copy-webpack-plugin zip-webpack-plugin
+npx webpack --mode production
 ```
 
 ### Create your Application
