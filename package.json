@@ -11,7 +11,7 @@
     "@babel/core": "7.13.16",
     "@babel/preset-typescript": "7.13.0",
     "@types/node": "15.0.1",
-    "babel-loader": "8.2.2",
+    "babel-loader": "8.3.0",
     "copy-webpack-plugin": "^8.1.1",
     "webpack": "^5.36.1",
     "webpack-cli": "^4.6.0",
