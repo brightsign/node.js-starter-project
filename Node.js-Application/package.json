@@ -1,0 +1,22 @@
+{
+  "name": "node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-webpack": "npm install --save-dev webpack webpack-cli",
+    "build-webpack-bundle": "npx webpack --mode production"
+  },
+  "keywords": [],
+  "author": "support@brightsign.biz (http://www.brightsign.biz/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "15.0.1",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}

@@ -1,0 +1,1 @@
+window.main=function(){console.log("hello BrightSign!")};
