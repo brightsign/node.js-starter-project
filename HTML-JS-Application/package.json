@@ -1,0 +1,23 @@
+{
+  "name": "node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-webpack": "npm install --save-dev webpack webpack-cli copy-webpack-plugin",
+    "build-webpack-bundle": "npx webpack --mode production"
+  },
+  "keywords": [],
+  "author": "support@brightsign.biz (http://www.brightsign.biz/)",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^10.0.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "debug": "^4.1.1",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
