@@ -9,7 +9,7 @@ This example was created for BrightAuthor:connected.
 * Your computer and BrightSign player must be connected to the internet. 
 * BrightAuthor:connected should already be downloaded and installed on your computer. 
 
-## Deploying a Node.js Aerver Application with BrightAuthor:connected	
+## Deploying a Node.js Server Application with BrightAuthor:connected	
 ### Create your Node.js Application
 1. Clone the project or download [ZIP](http://www.github.com/brightsign/node.js-starter-project/archive/master.zip), and then unzip *node.js-starter-project-master.zip*. 
 2. If you have not run npm previously, run **npm init** in your terminal to initialize the install. If you wish, you can import other modules with **npm  install** for additional functionality. 
